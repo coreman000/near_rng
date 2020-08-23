@@ -1,4 +1,4 @@
-const compile = require('near-sdk-as/compiler').compile
+import { compile } from 'near-sdk-as/compiler'
 
 compile('assembly/main.ts', // input file
   'out/main.wasm', // output file
