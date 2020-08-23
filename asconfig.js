@@ -1,4 +1,4 @@
-import { compile } from 'near-sdk-as/compiler'
+const { compile } from 'near-sdk-as/compiler'
 
 compile('assembly/main.ts', // input file
   'out/main.wasm', // output file
