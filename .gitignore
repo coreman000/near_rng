@@ -9,7 +9,7 @@ neardev/shared-test/*
 !neardev/shared-test/test.near.json
 
 # ignore any default network private keys and dev-account
-neardev/default/*
+#neardev/default/*
 #neardev/dev-account*
 
 # misc
