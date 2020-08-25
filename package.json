@@ -7,7 +7,7 @@
     "build:contract": "node asconfig.js",
     "build:web": "parcel build src/index.html --public-url ./",
     "deploy": "yarn build && near deploy && gh-pages -d dist/",
-    "dev": "yarn build:contract && near dev-deploy && nodemon --watch assembly -e ts --exec yarn dev:start",
+    "dev": "yarn build:contract && near deploy near_rng.testnet && nodemon --watch assembly -e ts --exec yarn dev:start",
     "lint": "eslint .",
     "start": "yarn deploy && parcel src/index.html",
     "dev:start": "env-cmd -f ./neardev/dev-account.env parcel src/index.html",
